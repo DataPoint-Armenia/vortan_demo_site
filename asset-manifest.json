@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vortan_demo_site/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/vortan_demo_site/static/js/main.d59e3d44.chunk.js",
+    "main.js.map": "/vortan_demo_site/static/js/main.d59e3d44.chunk.js.map",
+    "runtime-main.js": "/vortan_demo_site/static/js/runtime-main.d94312d7.js",
+    "runtime-main.js.map": "/vortan_demo_site/static/js/runtime-main.d94312d7.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/vortan_demo_site/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.1ccedba8.chunk.js": "/vortan_demo_site/static/js/2.1ccedba8.chunk.js",
+    "static/js/2.1ccedba8.chunk.js.map": "/vortan_demo_site/static/js/2.1ccedba8.chunk.js.map",
+    "static/js/3.e13280e2.chunk.js": "/vortan_demo_site/static/js/3.e13280e2.chunk.js",
+    "static/js/3.e13280e2.chunk.js.map": "/vortan_demo_site/static/js/3.e13280e2.chunk.js.map",
+    "index.html": "/vortan_demo_site/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/vortan_demo_site/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/vortan_demo_site/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.1ccedba8.chunk.js.LICENSE.txt": "/vortan_demo_site/static/js/2.1ccedba8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d94312d7.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.1ccedba8.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.d59e3d44.chunk.js"
+  ]
+}
