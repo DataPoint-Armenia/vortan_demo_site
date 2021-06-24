@@ -4,7 +4,7 @@ import InputForm from "./InputForm"
 const Main = () => {
     const style = {
       "margin": "1em",
-      "max-width": "400px",
+      "maxWidth": "400px",
     };
     return (
         <div style={style}>

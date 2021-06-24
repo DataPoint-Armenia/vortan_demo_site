@@ -14,14 +14,16 @@ export default function Results() {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>Term</th>
+                        <th>Suggest</th>
+                        <th>Distance</th>
                         <th>Score</th>
                     </tr>
                 </thead>
                 <tbody>
-                {results.map((result) => (
-                    <tr>
+                {results.map((result, index) => (
+                    <tr key={index}>
                         <td>{result.term}</td>
+                        <td>{result.distance}</td>
                         <td>{result.score}</td>
                     </tr>
                 ))}

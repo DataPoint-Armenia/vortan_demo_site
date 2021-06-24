@@ -21,13 +21,13 @@ const InputForm = () => {
           "word": input
         }
 
-        fetch("http://localhost:8000/suggest", {
+        fetch("http://localhost:5000/suggest", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "application/json; charset=UTF-8" },
             body: JSON.stringify(inputDict)
         }).then(response => {
             response.json().then((x) => {
-                setResults(x.data.suggest)
+                setResults(x.suggest)
             });
         })
     }
@@ -38,9 +38,12 @@ const InputForm = () => {
     return (
         <>
             <Form style={style} onSubmit={handleSubmit}>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Input</Form.Label>
-                    <Form.Control as="textarea" placeholder="տպրոց" rows={3} />
+                <Form.Group>
+                    <Form.Label>Input Term</Form.Label>
+                    <Form.Control type="text" placeholder="տպրոց" onChange={handleInput.bind(this)} />
+                    <Form.Text className="text-muted">
+                        Only supports single words for now
+                    </Form.Text>
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Submit
