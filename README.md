@@ -2,7 +2,7 @@
 
 Site to demo spellchecker.
 
-![screenshot](screenshots/demo.png)
+<img src="screenshots/demo.png" alt="screenshot" width="420">
 
 ## Run
 
