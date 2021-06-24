@@ -2,20 +2,18 @@
 
 Site to demo spellchecker.
 
-## Run
+![screenshot](screenshots/demo.png)
 
-Backend
-```
-cd backend
-python3 -m pip install -r requirements.txt
-python3 main.py
-```
+## Run
 
 Frontent
 ```
 cd frontend
 npm run start
 ```
+
+Backend
+See [vortan_spellcheck/api](https://github.com/datapoint-armenia/vortan_spellcheck#usage)
 
 ## Resources
 
