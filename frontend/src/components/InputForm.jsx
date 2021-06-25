@@ -21,7 +21,7 @@ const InputForm = () => {
           "word": input
         }
 
-        fetch("http://http://45.79.68.92/suggest", {
+        fetch("http://45.79.68.92/suggest", {
             method: "POST",
             headers: { "Content-Type": "application/json; charset=UTF-8" },
             body: JSON.stringify(inputDict)

@@ -10,7 +10,7 @@ function App() {
         <Helmet>
             <meta charSet="utf-8" />
             <title>Vortan Demo</title>
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         </Helmet>
         <Header />
         <Main />
