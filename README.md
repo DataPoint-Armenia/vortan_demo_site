@@ -15,8 +15,16 @@ npm run start
 ```
 
 Backend
-See [vortan_spellcheck/api](https://github.com/datapoint-armenia/vortan_spellcheck#usage)
+See [vortan_api](https://github.com/datapoint-armenia/vortan_api)
+
+## Deploy
+
+```
+cd frontend
+npm run deploy
+```
 
 ## Resources
 
 - https://testdriven.io/blog/fastapi-react/
+- https://create-react-app.dev/docs/deployment/#github-pages-https-pagesgithubcom
