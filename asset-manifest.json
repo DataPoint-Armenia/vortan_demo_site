@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/vortan_demo_site/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/vortan_demo_site/static/js/main.78219946.chunk.js",
-    "main.js.map": "/vortan_demo_site/static/js/main.78219946.chunk.js.map",
-    "runtime-main.js": "/vortan_demo_site/static/js/runtime-main.d94312d7.js",
-    "runtime-main.js.map": "/vortan_demo_site/static/js/runtime-main.d94312d7.js.map",
+    "main.js": "/vortan_demo_site/static/js/main.b3582cfd.chunk.js",
+    "main.js.map": "/vortan_demo_site/static/js/main.b3582cfd.chunk.js.map",
+    "runtime-main.js": "/vortan_demo_site/static/js/runtime-main.3d0d1bce.js",
+    "runtime-main.js.map": "/vortan_demo_site/static/js/runtime-main.3d0d1bce.js.map",
     "static/css/2.ef9168ec.chunk.css": "/vortan_demo_site/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.1ccedba8.chunk.js": "/vortan_demo_site/static/js/2.1ccedba8.chunk.js",
-    "static/js/2.1ccedba8.chunk.js.map": "/vortan_demo_site/static/js/2.1ccedba8.chunk.js.map",
-    "static/js/3.e13280e2.chunk.js": "/vortan_demo_site/static/js/3.e13280e2.chunk.js",
-    "static/js/3.e13280e2.chunk.js.map": "/vortan_demo_site/static/js/3.e13280e2.chunk.js.map",
+    "static/js/2.6bb67210.chunk.js": "/vortan_demo_site/static/js/2.6bb67210.chunk.js",
+    "static/js/2.6bb67210.chunk.js.map": "/vortan_demo_site/static/js/2.6bb67210.chunk.js.map",
+    "static/js/3.d2fc5a8f.chunk.js": "/vortan_demo_site/static/js/3.d2fc5a8f.chunk.js",
+    "static/js/3.d2fc5a8f.chunk.js.map": "/vortan_demo_site/static/js/3.d2fc5a8f.chunk.js.map",
     "index.html": "/vortan_demo_site/index.html",
     "static/css/2.ef9168ec.chunk.css.map": "/vortan_demo_site/static/css/2.ef9168ec.chunk.css.map",
     "static/css/main.9d5b29c0.chunk.css.map": "/vortan_demo_site/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.1ccedba8.chunk.js.LICENSE.txt": "/vortan_demo_site/static/js/2.1ccedba8.chunk.js.LICENSE.txt"
+    "static/js/2.6bb67210.chunk.js.LICENSE.txt": "/vortan_demo_site/static/js/2.6bb67210.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d94312d7.js",
+    "static/js/runtime-main.3d0d1bce.js",
     "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.1ccedba8.chunk.js",
+    "static/js/2.6bb67210.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.78219946.chunk.js"
+    "static/js/main.b3582cfd.chunk.js"
   ]
 }
