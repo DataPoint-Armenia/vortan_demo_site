@@ -2,6 +2,8 @@
 
 Site to demo spellchecker.
 
+https://datapoint-armenia.github.io/vortan_demo_site/
+
 <img src="screenshots/demo.png" alt="screenshot" width="420">
 
 ## Run
