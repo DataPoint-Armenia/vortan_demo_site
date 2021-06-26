@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vortan_demo_site/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/vortan_demo_site/static/js/main.b3582cfd.chunk.js",
-    "main.js.map": "/vortan_demo_site/static/js/main.b3582cfd.chunk.js.map",
+    "main.js": "/vortan_demo_site/static/js/main.2be81e99.chunk.js",
+    "main.js.map": "/vortan_demo_site/static/js/main.2be81e99.chunk.js.map",
     "runtime-main.js": "/vortan_demo_site/static/js/runtime-main.3d0d1bce.js",
     "runtime-main.js.map": "/vortan_demo_site/static/js/runtime-main.3d0d1bce.js.map",
     "static/css/2.ef9168ec.chunk.css": "/vortan_demo_site/static/css/2.ef9168ec.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.ef9168ec.chunk.css",
     "static/js/2.6bb67210.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.b3582cfd.chunk.js"
+    "static/js/main.2be81e99.chunk.js"
   ]
 }
