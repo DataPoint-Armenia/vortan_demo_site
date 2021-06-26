@@ -28,7 +28,7 @@ const InputForm = () => {
         }
 
         setAlertVariant("primary")
-        setAlertText("Loading")
+        setAlertText("Loading...")
         fetch("https://vortan-api.herokuapp.com/suggest", {
             method: "POST",
             headers: { "Content-Type": "application/json; charset=UTF-8" },
@@ -59,10 +59,10 @@ const InputForm = () => {
                         Only supports single words for now
                     </Form.Text>
                 </Form.Group>
-                <Container>
-                    <Row>
+                <Container fluid>
+                    <Row >
                         <Col>
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" size="lg">
                                 Submit
                             </Button>
                         </Col>
