@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import Results from "./Results"
+import { ParamsContext } from "./Params";
 
 export const ResultsContext = React.createContext({ results: []})
 
@@ -16,8 +17,10 @@ const InputForm = () => {
     const [results, setResults] = React.useState([])
     const [alertVariant, setAlertVariant] = React.useState("secondary");
     const [alertText, setAlertText] = React.useState("Status");
+    const { lang } = React.useContext(ParamsContext)
 
     const handleInput = event  => {
+        event.preventDefault();
         getResults(event.target.value)
     }
 
@@ -26,10 +29,11 @@ const InputForm = () => {
         const inputDict = {
           "word": input
         }
-
+        
+        console.log(lang)
         setAlertVariant("primary")
         setAlertText("Loading...")
-        fetch("https://vortan-api.herokuapp.com/suggest", {
+        fetch("https://vortan-api.herokuapp.com/suggest?lang=" + lang, {
             method: "POST",
             headers: { "Content-Type": "application/json; charset=UTF-8" },
             body: JSON.stringify(inputDict)
@@ -46,11 +50,8 @@ const InputForm = () => {
         });
     }
 
-    const style = {
-        padding: "1em",
-    };
     return (
-        <div style={style}>
+        <div>
             <Form onSubmit={handleSubmit}>
                 <Form.Group>
                     <Form.Label>Input Term</Form.Label>
