@@ -1,5 +1,7 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
+import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 import Alert from 'react-bootstrap/Alert';
@@ -58,27 +60,27 @@ const InputForm = () => {
         <div>
             <div style={style}>
             <Form onSubmit={handleSubmit}>
-                <Form.Label> <b> Input Term </b>  </Form.Label>
-                <Row> 
-                <Col xs={9}>
-                    <Form.Group>
-                        <Form.Control type="text" placeholder="տպրոց"
-                            onChange={handleInput.bind(this)} />
-                    </Form.Group>
-                </Col>
-                <Col >
-                    <Button variant="primary" type="submit" block>
-                        Submit
-                    </Button>
-                </Col >
+                <Container>
+                <Row>
+                    <Form.Label> <b> Input Term </b>  </Form.Label>
                 </Row>
                 <Row>
-                <Col>
-                    <Alert variant={alertVariant} >
+                    <Form.Group>
+                        <InputGroup>
+                        <Form.Control type="text" placeholder="տպրոց"
+                            onChange={handleInput.bind(this)} />
+                        <InputGroup.Append>
+                            <Button type="submit" variant="primary">Submit</Button>
+                        </InputGroup.Append>
+                        </InputGroup>
+                    </Form.Group>
+                </Row> 
+                <Row>
+                    <Alert variant={alertVariant}>
                         {alertText}
                     </Alert>
-                </Col>
                 </Row> 
+                </Container>
             </Form>
             </div>
             <ResultsContext.Provider value={{results}}>
