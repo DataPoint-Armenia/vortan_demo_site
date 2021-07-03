@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table';
+import Form from 'react-bootstrap/Form';
 import { ResultsContext } from "./InputForm";
 
 export default function Results() {
     const { results } = React.useContext(ResultsContext)
 
     return (
+        <>
         <Table striped bordered hover>
             <thead>
                 <tr>
@@ -24,5 +26,6 @@ export default function Results() {
             ))}
             </tbody>
         </Table>
+        </>
     )
 }

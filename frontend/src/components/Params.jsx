@@ -14,24 +14,26 @@ export default function Params() {
     }
 
     const style = {
-        marginBottom: "0.5em",
+        marginBottom: "2em",
     };
     return (
         <>
-            <Form.Label>Params</Form.Label>
-            <div key='inline-radio' className="mb-2" onChange={handleRadio}>
-                <Form.Check inline defaultChecked
-                    label="Eastern"
-                    value="hy"
-                    type='radio'
-                    name="lang_group"
-                    id={`inline-radio-1`} />
-                <Form.Check inline 
-                    label="Western"
-                    value="hyw"
-                    type='radio'
-                    name="lang_group"
-                    id={`inline-radio-2`} />
+            <div style={style}>
+                <Form.Label> <b> Params </b> </Form.Label>
+                <div key='inline-radio' className="mb-2" onChange={handleRadio}>
+                    <Form.Check inline defaultChecked
+                        label="Eastern"
+                        value="hy"
+                        type='radio'
+                        name="lang_group"
+                        id={`inline-radio-1`} />
+                    <Form.Check inline 
+                        label="Western"
+                        value="hyw"
+                        type='radio'
+                        name="lang_group"
+                        id={`inline-radio-2`} />
+                </div>
             </div>
             <ParamsContext.Provider value={{lang}}>
                 <InputForm />

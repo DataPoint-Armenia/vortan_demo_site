@@ -50,31 +50,37 @@ const InputForm = () => {
         });
     }
 
+    const style = {
+        marginBottom: "1em",
+    };
+
     return (
         <div>
+            <div style={style}>
             <Form onSubmit={handleSubmit}>
-                <Form.Group>
-                    <Form.Label>Input Term</Form.Label>
-                    <Form.Control type="text" placeholder="տպրոց" onChange={handleInput.bind(this)} />
-                    <Form.Text className="text-muted">
-                        Only supports single words for now
-                    </Form.Text>
-                </Form.Group>
-                <Container fluid>
-                    <Row >
-                        <Col>
-                            <Button variant="primary" type="submit" size="lg">
-                                Submit
-                            </Button>
-                        </Col>
-                        <Col>
-                            <Alert variant={alertVariant}>
-                                {alertText}
-                            </Alert>
-                        </Col>
-                    </Row>
-                </Container>
+                <Form.Label> <b> Input Term </b>  </Form.Label>
+                <Row> 
+                <Col xs={9}>
+                    <Form.Group>
+                        <Form.Control type="text" placeholder="տպրոց"
+                            onChange={handleInput.bind(this)} />
+                    </Form.Group>
+                </Col>
+                <Col >
+                    <Button variant="primary" type="submit" block>
+                        Submit
+                    </Button>
+                </Col >
+                </Row>
+                <Row>
+                <Col>
+                    <Alert variant={alertVariant} >
+                        {alertText}
+                    </Alert>
+                </Col>
+                </Row> 
             </Form>
+            </div>
             <ResultsContext.Provider value={{results}}>
                 <Results />
             </ ResultsContext.Provider>
