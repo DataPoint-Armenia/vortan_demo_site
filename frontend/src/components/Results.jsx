@@ -8,6 +8,7 @@ export default function Results() {
 
     return (
         <>
+        {results.map((result, index) => 
         <Table striped bordered hover>
             <thead>
                 <tr>
@@ -17,15 +18,16 @@ export default function Results() {
                 </tr>
             </thead>
             <tbody>
-            {results.map((result, index) => (
-                <tr key={index}>
-                    <td>{result.term}</td>
-                    <td>{result.distance}</td>
-                    <td>{result.score}</td>
-                </tr>
-            ))}
+                {result.map((sugg, index) => (
+                    <tr key={index}>
+                        <td>{sugg.term}</td>
+                        <td>{sugg.distance}</td>
+                        <td>{sugg.score}</td>
+                    </tr>
+                ))}
             </tbody>
         </Table>
+        )}
         </>
     )
 }

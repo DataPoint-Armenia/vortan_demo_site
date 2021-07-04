@@ -19,7 +19,7 @@ const InputForm = () => {
     const [results, setResults] = React.useState([])
     const [alertVariant, setAlertVariant] = React.useState("secondary");
     const [alertText, setAlertText] = React.useState("Status");
-    const { lang } = React.useContext(ParamsContext)
+    const { lang, mode } = React.useContext(ParamsContext)
 
     const handleInput = event  => {
         event.preventDefault();
@@ -32,16 +32,15 @@ const InputForm = () => {
           "word": input
         }
         
-        console.log(lang)
         setAlertVariant("primary")
         setAlertText("Loading...")
-        fetch("https://vortan-api.herokuapp.com/suggest?lang=" + lang, {
+        fetch("http://127.0.0.1:5000/suggest?lang=" + lang + "&mode=" + mode, {
             method: "POST",
             headers: { "Content-Type": "application/json; charset=UTF-8" },
             body: JSON.stringify(inputDict)
         }).then(response => {
             response.json().then((x) => {
-                setResults(x.suggest)
+                setResults(x.tokens)
             });
             setAlertVariant("success")
             setAlertText("Success")
