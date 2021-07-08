@@ -15,6 +15,7 @@ export default function Results() {
                     <th>Suggest</th>
                     <th>Distance</th>
                     <th>Score</th>
+                    <th>POS Tag</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +24,7 @@ export default function Results() {
                         <td>{sugg.term}</td>
                         <td>{sugg.distance}</td>
                         <td>{sugg.score}</td>
+                        <td>{sugg.tag}</td>
                     </tr>
                 ))}
             </tbody>
