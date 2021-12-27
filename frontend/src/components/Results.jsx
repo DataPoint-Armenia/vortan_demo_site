@@ -12,14 +12,14 @@ export default function Results() {
         <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>Suggest</th>
+                    <th>{result.original_term}</th>
                     <th>Distance</th>
                     <th>Score</th>
                     <th>POS Tags</th>
                 </tr>
             </thead>
             <tbody>
-                {result.map((sugg, index) => (
+                {result.suggestions.map((sugg, index) => (
                     <tr key={index}>
                         <td>{sugg.term}</td>
                         <td>{sugg.distance}</td>
